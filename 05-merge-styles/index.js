@@ -15,7 +15,7 @@ fs.readdir(
             "utf-8",
             function (error, fileContent) {
               if (error) throw error;
-              toWrite += fileContent;
+              toWrite += fileContent + '\n';
               fs.writeFile(
                 path.join(__dirname, "project-dist", "bundle.css"),
                 toWrite,

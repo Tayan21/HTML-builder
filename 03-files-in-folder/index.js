@@ -4,7 +4,6 @@ const fs = require('fs');
 fs.readdir(path.join(__dirname, 'secret-folder'),
   { withFileTypes: true },
   (err, files) => {
-  console.log("\nCurrent directory files:");
   if (err)
     console.log(err);
   else {
